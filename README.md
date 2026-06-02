@@ -118,6 +118,8 @@ Once the window opens, you will be prompted with a slick dark-themed login inter
 
 Click **LOG IN** or press `Enter` on your keyboard to access your main Event Planner Dashboard!
 
+---
+
 ### Quick Interface Operations Guide
 
 Once the graphical dashboard initializes on your screen, you can manage your operations using these quick interactive workflows:
@@ -127,6 +129,7 @@ Once the graphical dashboard initializes on your screen, you can manage your ope
 * **To Delete Records:** Highlight any target item inside the data grid table and click **Delete Event**. Respond to the secure window prompt to permanently wipe the record.
 * **To View the Clean Calendar View:** Click on the **All Events Calendar View** tab at the top of the workspace to toggle over to a full-width, distraction-free reporting spreadsheet.
 
+---
 
 GROUP 4 EVENT PLANNER SYSTEM 
 
@@ -138,3 +141,5 @@ MEMBER:
 4. ESPERAS, GERRY C.
 5. TUBIS, LORENZ 0.
 6. NAVAL, KYLE LESTER A.
+
+---
