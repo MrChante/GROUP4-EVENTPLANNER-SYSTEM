@@ -62,46 +62,65 @@ This feature allows you to permanently remove an unneeded event record from your
 
 ---
 
-## Step 1: Save the Files Locally
+### 1. Prerequisites
 
-Make sure both files are saved in the **exact same directory/folder** on your computer.
-
-1. Create a new folder (e.g., named `EventPlanner`).
-2. Save the first code snippet as **`eventplanner_gui.py`**.
-3. Save the second JSON snippet as **`events.json`**.
-
----
-
-## Step 2: Open Terminal or Command Prompt
-
-Navigate to the directory where you saved your files.
-
-* **Windows:** Press `Win + R`, type `cmd`, and press Enter.
-* **Mac/Linux:** Open the `Terminal` application.
-
-Use the `cd` command to move into your project folder. For example:
+Make sure you have **Python 3** installed on your computer. You can check if Python is installed by opening your Terminal (macOS/Linux) or Command Prompt (Windows) and typing:
 
 ```bash
-cd Path/To/Your/EventPlanner
+python --version
 
 ```
 
+*(Note: On some systems, you might need to type `python3 --version` instead).*
+
 ---
 
-## Step 3: Run the Application
+### 2. File Structure Setup
 
-Execute the Python script using the following command depending on your operating system:
+Ensure all five of your project files are saved together in the **same folder/directory**. Your folder should look exactly like this:
 
-* **Windows:**
-```bash
-python eventplanner_gui.py
+```text
+📁 Event-Planner-Project/
+│
+├── 📄 main.py
+├── 📄 login_view.py
+├── 📄 dashboard_view.py
+├── 📄 database_manager.py
+└── 📄 events.json
+
+```
+
+> **Important Note on `events.json`:** If the `events.json` file is missing, the program will create a new one automatically when you save an event. However, it's best to have your provided template file there so you start with sample data.
+
+---
+
+### 3. How to Run the Application
+
+#### **On Windows:**
+
+1. Open the folder where your files are located.
+2. Click on the folder's address bar at the top, type `cmd`, and press **Enter**. This opens the Command Prompt directly in that directory.
+3. Type the following command and press **Enter**:
+```cmd
+python main.py
 
 ```
 
 
-* **Mac / Linux:**
+
+#### **On macOS / Linux:**
+
+1. Open your **Terminal**.
+2. Navigate to your project folder using the change directory (`cd`) command. For example:
 ```bash
-python3 eventplanner_gui.py
+cd path/to/your/Event-Planner-Project
+
+```
+
+
+3. Run the application by typing:
+```bash
+python3 main.py
 
 ```
 
@@ -109,14 +128,14 @@ python3 eventplanner_gui.py
 
 ---
 
-## Step 4: System Access (Credentials)
+### 4. System Credentials
 
-Once the window opens, you will be prompted with a slick dark-themed login interface. Use the hardcoded administrative credentials present in your script:
+Once the window pops up, you will be greeted by the **System Login** screen. Use the hardcoded credentials found within `login_view.py` to gain access:
 
 * **Username:** `group4`
 * **Password:** `12345`
 
-Click **LOG IN** or press `Enter` on your keyboard to access your main Event Planner Dashboard!
+You can click the **LOG IN** button or simply press the **Enter** key while your cursor is in the password field to access the main dashboard.
 
 ---
 
