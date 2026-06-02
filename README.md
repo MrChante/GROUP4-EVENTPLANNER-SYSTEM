@@ -1,11 +1,8 @@
-System Description: Event Planner System
+System Description
 
-The Event Planner System is a desktop-based Graphical User Interface (GUI) application designed to streamline the scheduling, tracking, and management of events. Built using Python’s native tkinter and ttk libraries, it delivers a sleek, responsive workspace tailored for individual organizers or small event production teams.
+The Event Planner System is a desktop-based application designed to manage, track, and log event schedules within a structured digital ecosystem. Developed using Python's tkinter library, the system provides a responsive, dark-themed graphical user interface (GUI) modeled after contemporary flat-design aesthetics. Security is implemented through a standalone login gateway, requiring specific administrative credentials (group4 / 12345) before unlocking access to the core dashboards. Once authenticated, users can seamlessly transition between a data management panel and a unified calendar overview tab, both supported by real-time calculation metric cards that keep a live tally of total scheduled entries and unique venues booked.
 
-The system replaces traditional, error-prone console terminal menus with a modern, dark-themed visual dashboard inspired by high-end development environments. It unifies event data storage with an interactive workspace, ensuring all scheduling modifications persist safely in a local data file.
-
-Here is a detailed breakdown of the **CRUD (Create, Read, Update, Delete)** features implemented inside the new Event Planner GUI system, showing how your original backend logic connects directly to the interactive user interface.
-
+On the technical side, the application utilizes a lightweight, file-based database architecture that reads from and writes to a local events.json file. It operates on complete CRUD (Create, Read, Update, Delete) functional principles, empowering the user to log new gatherings with customized tracking parameters such as an Event ID, Name, Scheduled Date, Venue Location, and Main Organizer. Data integrity is carefully preserved through automated validation loops that prevent duplicate records, require structured fields, and dynamic event selection properties that safely lock or release primary identification markers during data modification cycles.
 ---
 
 ## 1. CREATE: Adding New Events
@@ -60,75 +57,65 @@ This feature allows you to permanently remove an unneeded event record from your
 * **Destructive Confirmation Prompt:** To prevent accidental mouse slips from deleting valuable scheduling data, the application interrupts the delete command by generating an explicit native confirmation message box (`askyesno`).
 * If confirmed, the system filters out the active matching `Event ID` string, updates `events.json`, clears all text input entry slots, and updates the UI grids.
 
-Here is a complete, step-by-step guide to setting up your files and executing the new Event Planner GUI interface application on your local machine.
+---
 
 ---
 
-### Step 1: Organize Your Project Directory
+## Step 1: Save the Files Locally
 
-To ensure the application reads and writes to your database file seamlessly, create a unified project directory and arrange the files as shown below:
+Make sure both files are saved in the **exact same directory/folder** on your computer.
 
-```text
-comprog/
-│
-├── eventplanner_gui.py   <-- Save the newly generated GUI script here
-└── events.json           <-- Place your existing events records file here
+1. Create a new folder (e.g., named `EventPlanner`).
+2. Save the first code snippet as **`eventplanner_gui.py`**.
+3. Save the second JSON snippet as **`events.json`**.
+
+---
+
+## Step 2: Open Terminal or Command Prompt
+
+Navigate to the directory where you saved your files.
+
+* **Windows:** Press `Win + R`, type `cmd`, and press Enter.
+* **Mac/Linux:** Open the `Terminal` application.
+
+Use the `cd` command to move into your project folder. For example:
+
+```bash
+cd Path/To/Your/EventPlanner
 
 ```
 
-> **Note:** If `events.json` is not present in the directory, the system will automatically initialize an empty database file for you upon its first launch.
-
 ---
 
-### Step 2: Open the Command Line Interface
+## Step 3: Run the Application
 
-You must interact with your operating system's terminal environment to run the script.
-
-* **Windows:** Press `Windows Key + R`, type `cmd`, and hit **Enter**.
-* **macOS:** Press `Command + Spacebar` to open Spotlight, type `Terminal`, and hit **Enter**.
-* **Linux:** Press `Ctrl + Alt + T` on your keyboard.
-
----
-
-### Step 3: Navigate to Your Project Folder
-
-Use the change directory (`cd`) command to point your terminal environment directly to your workspace folder. If you saved your `comprog` folder on the Desktop, enter the following command:
+Execute the Python script using the following command depending on your operating system:
 
 * **Windows:**
-```cmd
-cd %USERPROFILE%\Desktop\comprog
-
-```
-
-
-* **macOS / Linux:**
-```bash
-cd ~/Desktop/comprog
-
-```
-
-
-
----
-
-### Step 4: Run the Application Script
-
-Execute the program by calling the Python interpreter on your script file. Enter the following command into your terminal:
-
 ```bash
 python eventplanner_gui.py
 
 ```
 
-> **System Variation:** If your machine maps Python 3 installations to an explicit command name, execute this alternative instead:
-> ```bash
-> python3 eventplanner_gui.py
-> 
-> ```
-> 
-> 
+
+* **Mac / Linux:**
+```bash
+python3 eventplanner_gui.py
+
+```
+
+
 
 ---
+
+## Step 4: System Access (Credentials)
+
+Once the window opens, you will be prompted with a slick dark-themed login interface. Use the hardcoded administrative credentials present in your script:
+
+* **Username:** `group4`
+* **Password:** `12345`
+
+Click **LOG IN** or press `Enter` on your keyboard to access your main Event Planner Dashboard!
 
 ### Quick Interface Operations Guide
 
