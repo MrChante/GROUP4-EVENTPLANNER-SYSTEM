@@ -29,7 +29,7 @@ class DashboardView:
         ttk.Label(title_area, text="Event Planner System", style="Title.TLabel").pack(anchor="w")
         ttk.Label(
             title_area,
-            text="MEMBER: DAVE KEVIN CABAB, JOHN PAUL CASCARA, JUSTIN PAUL GUASIL, GERRY ESPERAS, LORENZ TUBIS, KYLE LESTER NAVAL",
+            text="MEMBER: CABAB, DAVE KEVIN N. , CASCARA, JOHN PAUL P. , GUASIL JUSTIN PAUL P. , ESPERAS, GERRY C. , TUBIS, LORENZ O. , NAVAL, KYLE LESTER M.",
             style="Subtitle.TLabel",
         ).pack(anchor="w", pady=(3, 0))
 
